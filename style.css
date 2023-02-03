@@ -1,0 +1,108 @@
+@import url(reset.css);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+
+
+/*
+font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif;
+color-principal: #fa573a
+color-azul:#21242e;
+*/
+
+
+html {
+
+    /*para generar animaciones de punto de ancla*/
+    scroll-behavior: smooth;
+
+}
+
+:root {
+
+    --fuenteprincipal: "Montserrat", sans-serif;
+    --fuentetitulos: "Handlee", cursive;
+    --colorprincipal: #fa573a;
+    --colorsecundario: #21242e;
+    --margingrid: 1em;
+    --fontsize: 1em;
+    --anchomaximo: 1110px;
+
+
+}
+
+img {
+
+    width: 100%;
+    height: auto;
+    display: block
+}
+
+.container {
+
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+
+
+}
+
+body {
+
+    font-family: var(--fuenteprincipal);
+    font-size: var(--fontsize);
+
+}
+
+/*inicio.header*/
+
+header.nav-top {
+
+    background-color: var(--colorsecundario);
+    padding: 1.250em 0;
+
+
+}
+
+header.nav-top.container {
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+header.nav-top a {
+
+    text-decoration: none;
+    color: var(--colorprincipal);
+
+}
+
+header.nav-top i {
+    font-size: 150%;
+}
+
+header.nav-top a span {
+
+    color: white;
+    display: none;
+
+}
+
+
+
+/*finalheader*/
+/*mediaqueries*/
+
+@media {
+    min-width 48.000em
+}
+
+    {
+    header.nav-top a span {
+
+        display: inline;
+        font-size: 110%;
+
+    }
+}
